@@ -17,6 +17,21 @@ A simple Streamlit app template for you to modify!
    ```
    $ streamlit run streamlit_app.py
    ```
+<!--  -->
+# Generate a sample dataframe
+np.random.seed(42)
+data = pd.DataFrame({
+    'Category': ['A', 'B', 'C', 'D'],
+    'Values': np.random.randint(10, 100, 4)
+})
+
+# Display the dataframe
+st.subheader('Sample Data')
+st.write(data)
+<!--  -->
+
+st.write("home)
+
 <!-- This is the code for heart disease prediction -->
 
 import streamlit as st
